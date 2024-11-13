@@ -1,3 +1,5 @@
+import db from "./database.js";
+
 const initializeAPI = async (app) => {
   app.post("/api/login", login);
 };
