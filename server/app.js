@@ -1,6 +1,10 @@
-const express = require("express");
-const http = require("http");
-const { initializeAPI } = require("./api");
+import express from "express";
+import http from "http";
+import initializeAPI from "./api.js";
+import sqlite3 from "sqlite3";
+
+const db = new sqlite3.Database("my.db", sqlite3.OPEN_READWRITE);
+console.log("Node.js + SQLite3")
 
 // Create the express server
 const app = express();

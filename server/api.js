@@ -14,4 +14,4 @@ const login = async (req, res) => {
   res.send(answer);
 };
 
-module.exports = { initializeAPI };
+export default initializeAPI;
